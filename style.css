@@ -1,0 +1,122 @@
+:root {
+    --color-violet: #86647A;
+    --color-olive: #a5a281;
+    --color-cream: #eae6dc;
+    
+
+
+}
+
+@font-face {
+    font-family: Rische;
+    src: url('./fonts/Rische/Flavortype\ -\ Rische\ Bold.otf'), url('./fonts/Rische/Flavortype\ -\ Rische\ Light.otf'), url('./fonts/Rische/Flavortype\ -\ Rische\ Medium.otf'), url('./fonts/Rische/Flavortype\ -\ Rische\ Regular.otf'), url('./fonts/Rische/Flavortype\ -\ Rische\ Semibold.otf');
+}
+@font-face {
+    font-family: NoirPro;
+    src: url('./fonts/Noir-Pro/NoirPro-Bold.otf'),url('./fonts/Noir-Pro/NoirPro-BoldItalic.otf'),url('./fonts/Noir-Pro/NoirPro-Heavy.otf'), url('./fonts/Noir-Pro/NoirPro-HeavyItalic.otf'), url('./fonts/Noir-Pro/NoirPro-Italic.otf'),url('./fonts/Noir-Pro/NoirPro-Light.otf'),url('./fonts/Noir-Pro/NoirPro-LightItalic.otf'), url('./fonts/Noir-Pro/NoirPro-Medium.otf');
+}
+.filter-cream {
+    filter: invert(100%) sepia(2%) saturate(6910%) hue-rotate(306deg) brightness(88%) contrast(107%);
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-cream);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-cream);
+}
+.navbar-main-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: var(--color-violet);
+    padding: 20px;
+
+
+}
+.navbar-main-list-item{
+    text-decoration: none;
+    color: var(--color-cream);
+    font-family: 'Rische';
+}
+.navbar-social-icon {
+    width: 20px;
+    padding: 5px;
+    color: var(--color-violet);
+}
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.navbar-logo {
+    width: 120px;
+}
+.title-logo {
+    width: 500px;
+}
+.navbar-var {
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+}
+.header {
+
+    
+}
+.main-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    background-color: var(--color-olive);
+    border-radius: 100px;
+}
+.main-evento {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    background-color: var(--color-olive);
+    border-radius: 100px;
+}
+.main-evento img {
+    width: 50%;
+    margin: 50px;
+    
+}
+.main-evento div {
+    width: 50%;
+    margin: 50px;
+    
+}
+.main-card-phrase {
+    font-family: 'Noir-Pro';
+    font-style: italic;
+    font-size: 50px;
+    padding: 20px;
+    width: 50%;
+    color: var(--color-cream)
+}
+.main-card img {
+    width: 50%;
+    margin: 50px;
+    
+}
+
+
+.footer{
+    background-color:var(--color-violet);
+    display: flex;
+    justify-content: space-around;
+
+}
+
