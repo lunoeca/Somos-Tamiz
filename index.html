@@ -2,72 +2,108 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39b6a1d3e2.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./assets/Fondo Transparente/Tamiz_logotipo-01.png">
     <title>Somos Tamiz</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <div>
+            <div class="navbar-logo-box">
                 <a href="index.html">
-                    <img src="./assets/Fondo Transparente/Tamiz_logotipo-01.png" alt="logo" class="navbar-logo">
+                    <img src="./assets/Fondo Transparente/Tamiz_logotipo-01 copy.png" alt="logo" class="navbar-logo">
                 </a>
             </div>
             <div class="header-title">
                 <h1>
-                    <img src="./assets/Fondo Transparente/Tamiz_logotipo-02.png" alt="logotipo" class="title-logo" class=".filter-cream">
+                    <img src="./assets/Fondo Transparente/Logo Tamiz.png" alt="logotipo" class="title-logo">
                 </h1>
             </div>
             <div class="navbar-nav">
                 <nav class="navbar-social">
-                    <a href="https://www.instagram.com/silvinagalacho" target="_blank"><img src="./assets/instagram.svg" alt='IG' class="navbar-social-icon"></a>
-                    <a href="https://www.facebook.com/Directamente-Silvina-107614278215130" target="_blank"><img src="./assets/facebook.svg" alt='FB' class="navbar-social-icon"></a>
-                    <a href="https://www.youtube.com/watch?v=raWnVl-uzM0" target="_blank"><img src="./assets/youtube.svg" alt='YT' class="navbar-social-icon"></a>
+                    <a href="https://www.instagram.com/silvinagalacho" target="_blank"><img src="./assets/instagram.svg" alt='IG' class="navbar-social-icon filter-cream" ></a>
+                    <a href="https://www.facebook.com/Directamente-Silvina-107614278215130" target="_blank"><img src="./assets/facebook.svg" alt='FB' class="navbar-social-icon filter-cream"></a>
+                    <a href="https://www.youtube.com/watch?v=raWnVl-uzM0" target="_blank"><img src="./assets/youtube.svg" alt='YT' class="navbar-social-icon filter-cream"></a>
+                </nav>
+                <nav class="navbar-main">
+                    <ul class="navbar-main-list">
+                        <li><a href="index.html" class="navbar-main-list-item">Inicio</a></li>
+                        <li><a href="about-us.html" class="navbar-main-list-item">Nosotros</a></li>
+                        <li><a href="contact-us.html" class="navbar-main-list-item">Contacto</a></li>
+                    </ul>
                 </nav>
             </div>
         </nav>
-        <nav class="navbar-main">
-            <ul class="navbar-main-list">
-                <li><a href="index.html" class="navbar-main-list-item">Inicio</a></li>
-                <li><a href="about-us.html" class="navbar-main-list-item">Acerca mio</a></li>
-                <li><a href="contact-us.html" class="navbar-main-list-item">Contacto</a></li>
-            </ul>
-        </nav>
-        
     </header>
+
     <main>
-        <div>
-            <div class="main-card">
-                <img src="./assets/silvi-1.jpg" alt="silvi">
-                <p class="main-card-phrase">Una selección de cocina por mujeres que cocinan.</p>
+        <section>
+
+            <div class="card-1">
+                <div class="card-1-content">
+                    <h2 class="card-1-text">Una selección de cocina por mujeres que cocinan.</h2>
+                    <button class="btn-bg">Eventos</button>
+                </div>
             </div>
-            <div class="main-evento">
+        </section>
+        <section>
+            <div class="cocina-x-muj">
+                <img src="./assets/RRSS/Tamiz_imagen feed-09.jpg" alt="Frase" class="img-frase">
+            </div>
+        </section>
+        <section>
+            <div class="card-2">
+                <img src="./assets/RRSS/Tamiz_imagen feed-30.jpg" alt="plato">
                 <div>
                     <h3>Eventos</h3>
                     <p>Eventos de cocina corporativos </p>
+                    <button class="btn-md">Eventos</button>
                 </div>
-                <img src="./assets/food.jpg" alt="plato">
             </div>
-
-        </div>
+        </section>
+        <section>
+            <div class="cards">
+                <div class="box-card-3">
+                    <div>
+                        <img src="./assets/RRSS/Tamiz_imagen feed-04.jpg" alt="plato">
+                        <h3>Eventos</h3>
+                        <p>Eventos de cocina corporativos </p>
+                        <button class="btn-md">Eventos</button>
+                    </div>
+                    <div>
+                        <img src="./assets/RRSS/Tamiz_imagen feed-14.jpg" alt="plato">
+                        <h3>Eventos</h3>
+                        <p>Eventos de cocina corporativos </p>
+                        <button class="btn-md">Eventos</button>
+                    </div>
+                    <div>
+                        <img src="./assets/RRSS/Tamiz_imagen feed-38.jpg" alt="plato">
+                        <h3>Eventos</h3>
+                        <p>Eventos de cocina corporativos </p>
+                        <button class="btn-md">Eventos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div>
-            <ul>
-                <li>NOMBRE</li>
-                <li>TELEFONO </li>
-                <li>DIRECCION</li>
-                <li>DIAS Y HORARIOS</li>
+            <ul class="footer-contact">
+                <li class="footer-contact-item">NOMBRE</li>
+                <li><a href="tel:+54911000000" class="footer-contact-item">555 005 500</a> </li>
+                <li class="footer-contact-item">DIRECCION</li>
+                <li class="footer-contact-item">DIAS Y HORARIOS</li>
             </ul>
         </div>
         <div>
-            <ul>
-                <li><a href="index.html" class="footer-list-item">Inicio</a></li>
-                <li><a href="about-us.html" class="footer-list-item">Acerca mio</a></li>
-                <li><a href="contact-us.html" class="footer-list-item">Contacto</a></li>
+            <ul class="footer-navbar">
+                <li><a href="index.html" class="footer-navbar-item">Inicio</a></li>
+                <li><a href="about-us.html" class="footer-navbar-item">Nosotros</a></li>
+                <li><a href="contact-us.html" class="footer-navbar-item">Contacto</a></li>
             </ul>
-        </div>
+        </div> 
     </footer>
 
 </body>
