@@ -24,7 +24,7 @@ body {
     align-items: center;
 }
 
-/* HEADFER NABVAR */
+/* HEADER NABVAR */
 .header {
 
     background-color: var(--color-violet);
@@ -162,8 +162,8 @@ main{
 .cards {
     width: 100vw;
     background-image: url(./assets/RRSS/Tamiz_imagen\ feed-37.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
     background-position: center center;
     display: flex;
     justify-content: center;
@@ -179,7 +179,7 @@ main{
     border-radius: 15px;
     color: var(--color-cream);
     margin: 10px;
-    opacity: 0.8;
+
 }
 .box-card-3 img {
     max-width: 30%;
