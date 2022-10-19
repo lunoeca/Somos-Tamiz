@@ -19,32 +19,47 @@
         <div class="navbar-nav">
             <nav class="navbar-main">
                 <ul class="navbar-main-list">
-                    <li><a href="index.html" ><div class="navbar-main-list-item">Inicio</div></a></li>
-                    <li><a href="about-us.html" ><div class="navbar-main-list-item">Nosotros</div></a></li>
-                    <li><a href="gallery.html" ><div class="navbar-main-list-item" >Galeria</div></a></li>
-                    <li><a href="contact-us.html"><div class="navbar-main-list-item">Contacto</div></a></li>
+                    <li><a href="index.html">
+                            <div class="navbar-main-list-item">Inicio</div>
+                        </a></li>
+                    <li><a href="about-us.html">
+                            <div class="navbar-main-list-item">Nosotros</div>
+                        </a></li>
+                    <li><a href="gallery.html">
+                            <div class="navbar-main-list-item">Galeria</div>
+                        </a></li>
+                    <li><a href="contact-us.html">
+                            <div class="navbar-main-list-item">Contacto</div>
+                        </a></li>
                 </ul>
             </nav>
         </div>
     </nav>
 </header>
+
 <body>
     <main>
         <div class="main-form">
-            <form action="https://formsubmit.co/somostamiz@gmail.com" method="POST">
+            <form  id="formulario">
+
                 <ul>
                     <li>
                         <h1 class="titulo"> Contactanos </h1>
                     </li>
-                    <br> 
-                    <li class="label" > <label  for="fname">Nombre</label> 
-                     <input type="text" id="fname" name="user_name" placeholder="Apellido y Nombres"> </li>
-                    <li class ="label"> <label for="femail" required >Email</label>
-                     <input type="text" id="femail" name="user_email" placeholder="Correo electronico"></li>
-                    <li class ="label" > <label for="ftelefono">Telefono</label>
-                     <input type="text" id="ftelefono" name="user_telefono" placeholder="Telefono"></li>
-                    <li class ="label" > <label for="fmessage">Comentarios</label>
-                     <textarea id="Comentarios"  type="text" name="message"> </textarea></li>
+                    <br>
+                    <div id ="error"></div> 
+                    <li class="label"> <label for="fname">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombres">
+                    </li>
+                    <li class="label"> <label for="femail" required>Email</label>
+                        <input type="text" id="correo" name="correo" placeholder="Correo electronico">
+                    </li>
+                    <li class="label"> <label for="ftelefono">Telefono</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+                    </li>
+                    <li class="label"> <label for="fmessage">Comentarios</label>
+                        <textarea id="Comentarios" type="text" name="mensaje"> </textarea>
+                    </li>
                     <div class="area-boton">
                         <li> <input type="submit" value="Enviar" class="boton"> </li>
                     </div>
@@ -71,12 +86,13 @@
             <li><a href="gallery.html" class="footer-navbar-item">Galeria</a></li>
             <li><a href="contact-us.html" class="footer-navbar-item">Contacto</a></li>
         </ul>
-    </div> 
+    </div>
     <div>
         <a href="https://www.instagram.com/silvinagalacho" target="_blank">
-            <img src="./assets/icons/instagram.svg" alt='IG' class="social-icon filter-cream" >
+            <img src="./assets/icons/instagram.svg" alt='IG' class="social-icon filter-cream">
         </a>
     </div>
 </footer>
+<script src="formulario.js"></script>
 
 </html>
