@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/39b6a1d3e2.js" crossorigin="anonymous"></script>
     <script src="./carousel.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-    <script src="https://malsup.github.io/jquery.cycle2.center.js"></script>
     <link rel="icon" href="./assets/Fondo Transparente/Tamiz_logotipo-01.png">
     <title>Somos Tamiz</title>
 </head>
@@ -35,53 +32,92 @@
     </header>
 
     <main>
-        <div class="cycle-slideshow" data-cycle-fx="scrollHorz"
-        data-cycle-timeout="0"
-        data-cycle-prev="#prev"
-        data-cycle-next="#next"
-        data-cycle-center-horz=true
-        data-cycle-center-vert=true>
-            <img src="./assets/slide1.jpeg" alt="img1">
-            <img src="./assets/slide2.jpg" alt="img2">
-            <img src="./assets/slide3.jpeg" alt="img3">
-            <img src="https://malsup.github.io/images/p4.jpg" alt="img4" >
-        </div>
-        <div class="center">
-            <a href=# id="prev">Prev</a> 
-            <a href=# id="next">Next</a>
-        </div>
-            <!-- <div class="carousel">
-                <button class="carousel-btn carousel-btn-left"><img src="./assets/chevron-left-solid.svg" alt="left"></button>
-                <div class="carousel-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide">
-                            <img  class="carousel-img">
-                        </li>
-                        <li class="carousel-slide">
-                            <img src="./assets/slide2.jpg" alt="img1" class="carousel-img">
-                        </li>
-                        <li class="carousel-slide">
-                            <img src="./assets/slide3.jpeg" alt="img1" class="carousel-img">
-                        </li>
-                        <li class="carousel-slide">
-                            <img src="./assets/slide4.jpeg" alt="img1" class="carousel-img">
-                        </li>
-                    </ul>
+        <div class="container-carousel">
+            <div class="carousel">
+                <div class="carousel__item carousel__item--visible">
+                    <img src="./assets/TAMIZ-FOTOS/1.jpeg" />
                 </div>
-                <button class="carousel-btn carousel-btn-right"><img src="./assets/chevron-right-solid.svg" alt="right"></button>
-                <div class="carousel-nav">
-                    <button class="carousel-indicator">
-                        BTN
-                    </button>
-                    <button class="carousel-indicator">
-                        BTN
-                    </button>
-                    <button class="carousel-indicator">
-                        BTN
-                    </button>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/2.jpeg" />
                 </div>
-
-            </div> -->
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/3.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/4.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/5.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/6.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/7.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/8.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/9.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/10.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/11.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/12.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/13.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/14.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/15.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/16.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/17.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/18.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/19.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/20.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/21.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/22.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/23.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/24.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/25.jpeg" />
+                </div>
+                <div class="carousel__item">
+                    <img src="./assets/TAMIZ-FOTOS/26.jpeg" />
+                </div>
+                    <div class="carousel__actions">
+                    <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+                    <button id="carousel__button--next" aria-label="Next slide">></button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-logo-box">
@@ -104,7 +140,6 @@
             </a>
         </div>
     </footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -144,7 +144,7 @@ main {
 }
 .cards {
     width: 100vw;
-    background-image: url(./assets/slide2.jpg);
+    background-image: url(./assets/bg-home.jpg);
     /* background-image: url(./assets/RRSS/Tamiz_imagen\ feed-37.jpg); */
     background-repeat: repeat;
     background-size: contain;
@@ -270,6 +270,69 @@ textarea{
     width: 40px;
 }
 
+/* CAROUSEL */
+.container-carousel{
+    display: flex;
+    justify-content: center;
+}
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    transform: opacity linear;
+    }
+}
+
 
 /* For little phones: */
 @media screen and (max-width: 300px) {
@@ -285,7 +348,7 @@ textarea{
         font-size: 40px;
     }
     .title-logo {
-        width: 40%;
+        width: 30%;
     }
     .header-title {
         padding-top: 20px;
@@ -309,7 +372,7 @@ textarea{
     }
 
     .navbar-main-list-item{
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         text-decoration: none;
         color: var(--color-cream);
@@ -335,6 +398,9 @@ textarea{
         margin: 25px;
         max-width: 70vw;
     } 
+    .title-logo {
+        width: 25%;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -354,7 +420,7 @@ textarea{
         justify-content: space-around;
     }
     .navbar-main-list-item{
-        font-size: 32px;
+        font-size: 30px;
 }
 
 
