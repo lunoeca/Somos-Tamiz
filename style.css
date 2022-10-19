@@ -170,33 +170,37 @@ main {
 /* CONTACT-US */
 .main-form {
     display: flex;
-    align-items: center;
-    padding: 20px;
     margin: 50px;
     background-color: var(--color-violet);
     border-radius: 100px;
-
+    padding: 60px auto;
+    justify-content: center;
 }
 .titulo {
-    align-items: center;
+    text-align: center;
     color: var(--color-cream);
     font-size: 44px;
+    
 }
-
+.label {
+    color: var(--color-cream); 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 form {
     font-size: 20px;
-    width: 70%;
-    align-items: center;
-    margin-left: 25%;
 }
 
 ul {
     list-style-type: none;
     /* hace que las listas no sean con "puntos"*/
+    list-style-position: inside;
+    padding: 0;
 }
 
 input[type=text] {
-    width: 70%;
+    
     padding: 10px 20px;
     margin: 6px 0;
     box-sizing: border-box;
@@ -205,7 +209,7 @@ input[type=text] {
     background: var(--color-cream);
 }
 textarea{
-    width: 70%;
+    
     padding: 10px 20px;
     margin: 6px 0;
     box-sizing: border-box;
@@ -227,7 +231,7 @@ textarea{
         cursor: pointer; 
 }
 .area-boton{
-    margin-left: 18%; 
+    text-align: center;
 }
 
 /* GALLERY */
