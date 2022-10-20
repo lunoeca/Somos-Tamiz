@@ -182,25 +182,37 @@ main {
     transform: translateX(-50%);
 }
 
-.button {
+.btn-olive {
     background-color: var(--color-olive);
-    border-radius: 15px;
     color: var(--color-cream);
     border: 1px solid var(--color-cream);
     font-style: bold;
 }
 
 .btn-bg {
+    border-radius: 15px;
     padding: 10px 25px;
     font-size: 16px;
 }
 
 .btn-md {
+    border-radius: 15px;
     width: 200px;
     font-size: 16px;
     padding: 10px 15px;
 }
-
+.btn-lt {
+    max-width: 100px;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+.btn-cream{
+    background-color: var(--color-cream);
+    color: var(--color-olive);
+    border: none;
+    
+}
 .card-1-text {
     color: var(--color-cream);
     font-size: 20px;
@@ -220,18 +232,19 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 10px ;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 30px auto;
     background-color: var(--color-olive);
 }
 .card-2 img {
-    max-width: 50%;
+    max-width: 90%;
     max-height: 60%;
     margin: 10px;
     border-radius: 15px;
 }
 .card-2 h3 {
     margin: 0;
+    font-size: 24px;
 }
 .card-2-text {
     display: flex;
@@ -239,10 +252,16 @@ main {
     align-items: center;
     color: var(--color-cream);
     text-align: center;
+    gap: 15px;
 }
 .card-2-text p {
-    padding: 10px;
     margin: 0;
+    font-size: 16px;
+}
+.card-2-text div{
+    display: flex;
+    flex-direction: column ;
+    gap: 5px;
 }
 .cards {
     width: 100vw;
@@ -432,11 +451,13 @@ textarea {
         padding-top: 20px;
     }
     .card-2 {  
-        width: 80vw;
         flex-direction: row;
     }
-    .card-2-text{
+    .card-2 img{  
         max-width: 50%;
+    }
+    .card-2-text p {
+        font-size: 20px;
     }
     .navbar {
         display: flex;
@@ -468,6 +489,9 @@ textarea {
         text-decoration: none;
         color: var(--color-cream);
     }
+    .home-text {
+        font-size: 24px;
+    }
     .footer-logo {
         width: 30%;
     }
@@ -490,7 +514,7 @@ textarea {
     .card-1-text {
         font-size: 42px;
     }
-    .cocina-x-muj {
+    .home-text {
         font-size: 36px;
     }
     
@@ -530,8 +554,9 @@ textarea {
 
 
 @media (hover: hover) {
-    .button:hover {
+    .btn-olive:hover, .btn-cream:hover {
         background-color: var(--color-violet);
+        border: 2px solid var(--color-cream);
     }
 
     .navbar-main-list-item:hover {
