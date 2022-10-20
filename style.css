@@ -50,7 +50,7 @@ h1 {
     width: 80vw;
     display: flex;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-top: 5%;
 }
 
@@ -268,7 +268,7 @@ main {
     display: flex;
     margin: 50px;
     background-color: var(--color-violet);
-    border-radius: 100px;
+    border-radius: 20px;
     padding: 60px auto;
     justify-content: center;
 }

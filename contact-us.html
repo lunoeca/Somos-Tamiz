@@ -1,102 +1,96 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/Fondo Transparente/Tamiz_logotipo-01.png">
-    <title>Somos Tamiz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
-<body>
-    
-</body>
-<header class="header">
-    <div class="header-title">
-        <h1>
-            <img src="./assets/Fondo Transparente/Logo Tamiz.png" alt="logotipo" class="title-logo">
-        </h1>
-    </div>
-    <!-- HAMBUGER MENU -->
-    <nav class="navbar">
-        <input type="checkbox" id="hamb-check" class="check-box">
-        <label for="hamb-check" class="check-btn">
-            <img src="./assets/icons/bars-solid.svg" alt="hamb" class="check-btn-img filter-cream"> 
-        </label>
-        <div class="navbar-nav">
-            <nav class="navbar-main">
-                <ul class="navbar-main-list">
-                    <input type="checkbox" id="hamb-check" class="close-box">
-                    <label for="hamb-check" class="close-btn">
-                        <img src="./assets/icons/xmark-solid.svg" alt="xmark" class="close-btn-img filter-cream"> 
-                    </label>
-                    <li><a href="index.html" ><div class="navbar-main-list-item">Inicio</div></a></li>
-                    <li><a href="about-us.html" ><div class="navbar-main-list-item">Nosotros</div></a></li>
-                    <li><a href="gallery.html" ><div class="navbar-main-list-item" >Galeria</div></a></li>
-                    <li><a href="contact-us.html"><div class="navbar-main-list-item">Contacto</div></a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./assets/Fondo Transparente/Tamiz_logotipo-01.png">
+        <title>Somos Tamiz</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-title">
+                <h1>
+                    <img src="./assets/Fondo Transparente/Logo Tamiz.png" alt="logotipo" class="title-logo">
+                </h1>
+            </div>
+            <!-- HAMBUGER MENU -->
+            <nav class="navbar">
+                <input type="checkbox" id="hamb-check" class="check-box">
+                <label for="hamb-check" class="check-btn">
+                    <img src="./assets/icons/bars-solid.svg" alt="hamb" class="check-btn-img filter-cream"> 
+                </label>
+                <div class="navbar-nav">
+                    <nav class="navbar-main">
+                        <ul class="navbar-main-list">
+                            <input type="checkbox" id="hamb-check" class="close-box">
+                            <label for="hamb-check" class="close-btn">
+                                <img src="./assets/icons/xmark-solid.svg" alt="xmark" class="close-btn-img filter-cream"> 
+                            </label>
+                            <li><a href="index.html" ><div class="navbar-main-list-item">Inicio</div></a></li>
+                            <li><a href="about-us.html" ><div class="navbar-main-list-item">Nosotros</div></a></li>
+                            <li><a href="gallery.html" ><div class="navbar-main-list-item" >Galeria</div></a></li>
+                            <li><a href="contact-us.html"><div class="navbar-main-list-item">Contacto</div></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </nav>
-        </div>
-    </nav>
-</header>
-    <main>
-        <div class="main-form">
-            <ul>
-                <li id ="error"> </li> 
-                <li>
-                    <h1 class="titulo"> Contactanos </h1>
-                </li>
-                <br>
-            
-            <form id="formulario" action="https://formsubmit.co/somostamiz@gmail.com" method="POST" onsubmit="return chequeo()">
-                    
-                    <li class="label"> <label for="fname">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombres">
+        </header>
+        <main>
+            <div class="main-form">
+                <ul>
+                    <li id ="error"> </li> 
+                    <li>
+                        <h1 class="titulo"> Contactanos </h1>
                     </li>
-                    <li class="label"> <label for="femail" required>Email</label>
-                        <input type="text" id="correo" name="correo" placeholder="Correo electronico">
-                    </li>
-                    <li class="label"> <label for="ftelefono">Telefono</label>
-                        <input type="text" id="telefono" name="telefono" placeholder="Telefono">
-                    </li>
-                    <li class="label"> <label for="fmessage">Comentarios</label>
-                        <textarea id="Comentarios" type="text" name="mensaje"> </textarea>
-                    </li>
-                    <div class="area-boton">
-                        <li class=" animate__animated animate__pulse"> <input type="submit" value="Enviar"
-                                class="boton"> </li>
-                    </div>
-
-                    <input type="hidden" name="_next" value="./contact-us.html">
-                    <input type="hidden" name="_captcha" value="false">
+                    <br>
+                <form id="formulario" action="https://formsubmit.co/somostamiz@gmail.com" method="POST" onsubmit="return chequeo()">
+                    <ul>
+                        <li class="label"> 
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombres">
+                        </li>
+                        <li class="label"> 
+                            <label for="femail" required>Email</label>
+                            <input type="text" id="correo" name="correo" placeholder="Correo electronico">
+                        </li>
+                        <li class="label"> 
+                            <label for="ftelefono">Telefono</label>
+                            <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+                        </li>
+                        <li class="label"> <label for="fmessage">Comentarios</label>
+                            <textarea id="Comentarios" type="text" name="mensaje"> </textarea>
+                        </li>
+                        <div class="area-boton">
+                            <li class=" animate__animated animate__pulse"> <input type="submit" value="Enviar" class="boton"> 
+                            </li>
+                        </div>
+                        <input type="hidden" name="_next" value="./contact-us.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </ul>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo-box">
+                <a href="index.html">
+                    <img src="./assets/Fondo Transparente/Tamiz_logotipo-01 copy.png" alt="logo" class="footer-logo">
+                </a>
+            </div>
+            <div>
+                <ul class="footer-navbar">
+                    <li><a href="index.html" class="footer-navbar-item">Inicio</a></li>
+                    <li><a href="about-us.html" class="footer-navbar-item">Nosotros</a></li>
+                    <li><a href="gallery.html" class="footer-navbar-item">Galeria</a></li>
+                    <li><a href="contact-us.html" class="footer-navbar-item">Contacto</a></li>
                 </ul>
-            </form>
-        </div>
-    </main>
-
-    
-
-    <footer class="footer">
-        <div class="footer-logo-box">
-            <a href="index.html">
-                <img src="./assets/Fondo Transparente/Tamiz_logotipo-01 copy.png" alt="logo" class="footer-logo">
-            </a>
-        </div>
-        <div>
-            <ul class="footer-navbar">
-                <li><a href="index.html" class="footer-navbar-item">Inicio</a></li>
-                <li><a href="about-us.html" class="footer-navbar-item">Nosotros</a></li>
-                <li><a href="gallery.html" class="footer-navbar-item">Galeria</a></li>
-                <li><a href="contact-us.html" class="footer-navbar-item">Contacto</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/silvinagalacho" target="_blank">
-                <img src="./assets/icons/instagram.svg" alt='IG' class="social-icon filter-cream">
-            </a>
-        </div>
-    </footer>
-    <script src="formulario.js"></script>
-</body>
-
+            </div>
+            <div>
+                <a href="https://www.instagram.com/silvinagalacho" target="_blank">
+                    <img src="./assets/icons/instagram.svg" alt='IG' class="social-icon filter-cream">
+                </a>
+            </div>
+        </footer>
+        <script src="formulario.js"></script>
+    </body>
 </html>
