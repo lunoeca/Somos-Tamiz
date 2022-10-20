@@ -286,6 +286,10 @@ main {
     flex-direction: column;
     text-align: left;
 }
+#error {
+    text-align: center;
+    color: var(--color-cream);
+}
 
 form {
     font-size: 20px;
