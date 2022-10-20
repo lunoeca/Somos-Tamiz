@@ -70,43 +70,75 @@ h1 {
 /* HEADER NABVAR */
 .header {
     background-color: var(--color-violet);
-
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-around;
-}
-
 .header-title {
     text-align: center;
     padding: 10px;
 }
-
 .title-logo {
     width: 45%;
 }
 
-/* HAMBUGER MENU */
-.navbar-nav {
+.social-icon {
+    width: 50%;
+}
+/* HAMBURGER MENU */
+.check-box , .close-box{
+    display: none;
+} 
+.check-btn{
+    width: 10%;
     position: absolute;
-    right: 0;
+    float: right;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 50;
 }
 
+.check-btn-img {
+    width: 30px;
+}
+.close-btn-img {
+    width: 15px;
+}
+.close-btn {
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+}
+.navbar-nav{
+    display:block;
+    position: fixed;
+    width: 100%;
+    background: var(--color-olive);
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 40;
+}
 .navbar-main-list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-
 }
-
 .navbar-main-list-item {
     text-decoration: none;
     color: var(--color-cream);
+    font-size: 16px;
+}
+.navbar-main-list li{
+    display: block;
+    padding: 20px;
+    line-height: 30px;
 }
 
-.social-icon {
-    width: 50%;
+.check-box:checked ~ .navbar-nav{
+    left: 0;
+}
+.close-box:checked ~ .navbar-nav{
+    left: -100%;
 }
 
 /* MAIN */
@@ -422,18 +454,18 @@ textarea {
 
 /* For tablets: */
 @media screen and (min-width: 768px) {
-    .card-1 {
+    .check-btn , .close-btn{
+        display: none;
+    }
+    .card-1{ 
         height: 50vh;
     }
-
     .card-1-text {
         font-size: 40px;
     }
-
     .title-logo {
         width: 30%;
     }
-
     .header-title {
         padding-top: 20px;
     }
@@ -442,65 +474,63 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
     }
-
     .navbar-nav {
         width: 100%;
         position: static;
         display: flex;
         flex-direction: column;
+        background-color: var(--color-violet);
     }
-
     .navbar-main-list {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         justify-content: space-around;
+        padding: 0px;
+        margin: 10px 0px;
     }
+    .navbar-main-list li{
+        padding: 0px;
 
-    .navbar-main-list-item {
-        font-size: 20px;
+    }
+    .navbar-main-list-item{
+        font-size: 16px;
         text-align: center;
         text-decoration: none;
         color: var(--color-cream);
     }
-
     .footer-logo {
         width: 30%;
     }
-}
-
+}  
 /* For desktop: */
 @media screen and (min-width: 1024px) {
-    .card-1 {
-        height: 70vh;
+    .card-1{ 
+        height: 75vh;
     }
-
     .card-1-text {
         font-size: 42px;
     }
-
     .cocina-x-muj {
-        /* display: none; */
         font-size: 36px;
     }
-
+    
     .box-card-3 {
         margin: 25px;
         max-width: 70vw;
-    }
-
+    } 
     .title-logo {
         width: 25%;
     }
-
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .navbar-logo {
+    .navbar-logo {  
         margin: 15px;
     }
 
@@ -511,11 +541,13 @@ textarea {
         align-items: center;
         list-style-type: none;
         justify-content: space-around;
+        margin: 15px 0px;
+    }
+    .navbar-main-list-item{
+        font-size: 24px;
+        padding: 0px;
     }
 
-    .navbar-main-list-item {
-        font-size: 30px;
-    }
 
 }
 
