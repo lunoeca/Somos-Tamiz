@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/Fondo Transparente/Tamiz_logotipo-01.png">
     <title>Somos Tamiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <header class="header">
@@ -40,14 +41,16 @@
 <body>
     <main>
         <div class="main-form">
-            <form  id="formulario" action="https://formsubmit.co/somostamiz@gmail.com" method="POST" >
+
+            <form id="formulario" action="https://formsubmit.co/somostamiz@gmail.com" method="POST"
+                onsubmit="return chequeo()">
 
                 <ul>
                     <li>
                         <h1 class="titulo"> Contactanos </h1>
                     </li>
                     <br>
-                    <div id ="error"></div> 
+                    <div id="error"></div>
                     <li class="label"> <label for="fname">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Apellido y Nombres">
                     </li>
@@ -61,8 +64,9 @@
                         <textarea id="Comentarios" type="text" name="mensaje"> </textarea>
                     </li>
                     <div class="area-boton">
-                        <li> <input type="submit" value="Enviar" class="boton"> </li>
+                        <li class=" animate__animated animate__pulse"  > <input type="submit" value="Enviar"  class="boton"> </li>
                     </div>
+
                     <input type="hidden" name="_next" value="./contact-us.html">
                     <input type="hidden" name="_captcha" value="false">
                 </ul>
@@ -70,7 +74,7 @@
         </div>
     </main>
 
-    <script src="/formulario.js"></script> 
+    <script src="/formulario.js"></script>
 
 
 </body>
