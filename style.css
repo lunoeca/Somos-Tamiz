@@ -32,39 +32,46 @@ h1 {
 
 
 /* NOSOTROS */
-.card1-aboutus div {
+
+.aboutus-text {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
     color: var(--color-cream); 
     justify-content: center;
-    margin-left: 4%;
     font-size: 20px;
-    
+    gap: 10px; 
+}
+.aboutus-text p {
+    margin: 0;
 }
 
 .card1-aboutus {
+    gap: 10px; 
     margin-bottom: 5%;
     background-color: var(--color-olive);
     box-sizing: content-box;
     width: 80vw;
+    flex-direction: column;
+    align-items: center;
     display: flex;
-    padding: 20px;
+    padding: 24px;
     border-radius: 15px;
     margin-top: 5%;
 }
 
 .imagensocias{
     border-radius: 15px;
-    max-width: 50%;
+    max-width: 70%;
     margin: 10px;
     height: 70%;   
 }
 
 .card1-aboutus-tit{
-    text-align: left;
-    font-size: 250%;
-    color: var(--color-cream); 
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-cream);
+    text-shadow: -4px 4px 5px var(--color-violet);
+
 }
 
 /* HEADER NABVAR */
@@ -290,10 +297,10 @@ main {
 /* CONTACT-US */
 .main-form {
     display: flex;
-    margin: 50px;
-    background-color: var(--color-violet);
+    margin: 40px; 
+    background-color: var(--color-olive);
     border-radius: 20px;
-    padding: 60px auto;
+    padding: 50px 4px;
     justify-content: center;
 }
 .titulo {
@@ -315,6 +322,7 @@ main {
 
 form {
     font-size: 20px;
+    padding: 10px;
 }
 ul {
     list-style-type: none;
@@ -322,13 +330,19 @@ ul {
     list-style-position: inside;
     padding: 0;
 }
+input::placeholder{
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-olive);
+}
 input[type=text] {
-    padding: 10px 20px;
+    padding: 5px 15px;
     margin: 6px 0;
     box-sizing: border-box;
     border: 2px solid var(--color-cream);
     border-radius: 2px;
     background: var(--color-cream);
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-olive);
 }
 textarea {
     padding: 10px 20px;
@@ -337,6 +351,8 @@ textarea {
     border: 2px solid var(--color-cream);
     border-radius: 4px;
     background: var(--color-cream);
+    font-family: 'Nunito', sans-serif;
+    color: var(--color-olive);
 }
 .boton {
     position: relative;
@@ -440,6 +456,15 @@ textarea {
 
 /* For tablets: */
 @media screen and (min-width: 768px) {
+    .card1-aboutus {
+        flex-direction: row;
+        gap: 25px;
+    }
+    .main-form{
+        max-width: 70%;
+        margin: 20px auto;
+
+    }
     .check-btn , .close-btn{
         display: none;
     }
