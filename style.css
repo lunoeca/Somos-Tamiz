@@ -42,7 +42,7 @@ h1 {
     gap: 10px; 
 }
 .aboutus-text p {
-    margin: 0;
+    margin: 15;
 }
 
 .card1-aboutus {
@@ -77,6 +77,7 @@ h1 {
 /* HEADER NABVAR */
 .header {
     background-color: var(--color-violet);
+    width: 100%;
 }
 .header-title {
     text-align: center;
@@ -194,12 +195,14 @@ main {
     color: var(--color-cream);
     border: 1px solid var(--color-cream);
     font-style: bold;
+   
 }
 
 .btn-bg {
     border-radius: 15px;
     padding: 10px 25px;
     font-size: 16px;
+   
 }
 
 .btn-md {
@@ -291,7 +294,10 @@ main {
     margin: 10px;
 }
 .box-card-3 img {
-    max-width: 30%;
+    border-radius: 15px;
+    max-width: 100%;
+    
+   
 }
 
 /* CONTACT-US */
@@ -375,9 +381,9 @@ textarea {
 /* FOOTER */
 .footer {
     background-color: var(--color-violet);
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     color: var(--color-cream);
     padding: 0 10px;
 }
@@ -390,10 +396,12 @@ textarea {
 .footer-navbar {
     list-style-type: none;
     padding: 0;
+    
 }
 .footer-navbar-item {
     text-decoration: none;
     color: var(--color-cream);
+   
 }
 .social-icon {
     width: 40px;
