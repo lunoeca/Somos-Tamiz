@@ -19,7 +19,7 @@ body {
     background-color: var(--color-cream);
     align-items: center;
     font-family: 'Nunito', sans-serif;
-    
+
 }
 
 a {
@@ -36,17 +36,17 @@ h1 {
 .aboutus-text {
     display: flex;
     flex-direction: column;
-    color: var(--color-cream); 
+    color: var(--color-cream);
     justify-content: center;
     font-size: 20px;
-    gap: 10px; 
+    gap: 10px;
 }
 .aboutus-text p {
     margin: 15;
 }
 
 .card1-aboutus {
-    gap: 10px; 
+    gap: 10px;
     margin-bottom: 5%;
     background-color: var(--color-olive);
     box-sizing: content-box;
@@ -63,7 +63,7 @@ h1 {
     border-radius: 15px;
     max-width: 70%;
     margin: 10px;
-    height: 70%;   
+    height: 70%;
 }
 
 .card1-aboutus-tit{
@@ -93,7 +93,8 @@ h1 {
 /* HAMBURGER MENU */
 .check-box , .close-box{
     display: none;
-} 
+    margin: 0
+}
 .check-btn{
     width: 10%;
     position: absolute;
@@ -109,6 +110,7 @@ h1 {
 }
 .close-btn-img {
     width: 15px;
+
 }
 .close-btn {
     position: absolute;
@@ -195,14 +197,14 @@ main {
     color: var(--color-cream);
     border: 1px solid var(--color-cream);
     font-style: bold;
-   
+
 }
 
 .btn-bg {
     border-radius: 15px;
     padding: 10px 25px;
     font-size: 16px;
-   
+
 }
 
 .btn-md {
@@ -221,7 +223,7 @@ main {
     background-color: var(--color-cream);
     color: var(--color-olive);
     border: none;
-    
+
 }
 .card-1-text {
     color: var(--color-cream);
@@ -236,7 +238,7 @@ main {
     color: var(--color-violet);
     text-align: center;
 }
-.card-2 {  
+.card-2 {
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -286,24 +288,31 @@ main {
 .box-card-3 {
     background-color: var(--color-olive);
     box-sizing: content-box;
-    width: 80vw;
+    width: 100vw;
     display: flex;
+    justify-content: space-around;
     padding: 15px;
-    border-radius: 15px;
     color: var(--color-cream);
-    margin: 10px;
+    margin: 0px;
+}
+.box-card-3 div{
+    max-width: 30%;;
 }
 .box-card-3 img {
     border-radius: 15px;
     max-width: 100%;
     
-   
-}
 
+
+}
+.bnt-link {
+    text-decoration: none;
+    color: var(--color-olive)
+}
 /* CONTACT-US */
 .main-form {
     display: flex;
-    margin: 40px; 
+    margin: 40px;
     background-color: var(--color-olive);
     border-radius: 20px;
     padding: 50px 4px;
@@ -336,11 +345,11 @@ ul {
     list-style-position: inside;
     padding: 0;
 }
-input::placeholder{
+.form-imput::placeholder{
     font-family: 'Nunito', sans-serif;
     color: var(--color-olive);
 }
-input[type=text] {
+.form-imput[type=text] {
     padding: 5px 15px;
     margin: 6px 0;
     box-sizing: border-box;
@@ -385,7 +394,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     color: var(--color-cream);
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 .footer-logo-box {
     max-width: 30%;
@@ -396,12 +405,12 @@ textarea {
 .footer-navbar {
     list-style-type: none;
     padding: 0;
-    
+
 }
 .footer-navbar-item {
     text-decoration: none;
     color: var(--color-cream);
-   
+
 }
 .social-icon {
     width: 40px;
@@ -476,7 +485,7 @@ textarea {
     .check-btn , .close-btn{
         display: none;
     }
-    .card-1{ 
+    .card-1{
         height: 50vh;
     }
     .card-1-text {
@@ -488,10 +497,10 @@ textarea {
     .header-title {
         padding-top: 20px;
     }
-    .card-2 {  
+    .card-2 {
         flex-direction: row;
     }
-    .card-2 img{  
+    .card-2 img{
         max-width: 50%;
     }
     .card-2-text p {
@@ -543,10 +552,20 @@ textarea {
         font-size: 16px;
         padding: 10px 15px;
     }
-}  
+    .box-card-3 {
+        background-color: var(--color-olive);
+        box-sizing: content-box;
+        width: 80vw;
+        display: flex;
+        padding: 15px;
+        border-radius: 15px;
+        color: var(--color-cream);
+        margin: 10px;
+    }
+}
 /* For desktop: */
 @media screen and (min-width: 1024px) {
-    .card-1{ 
+    .card-1{
         height: 75vh;
     }
     .card-1-text {
@@ -555,11 +574,11 @@ textarea {
     .home-text {
         font-size: 36px;
     }
-    
+
     .box-card-3 {
         margin: 25px;
         max-width: 70vw;
-    } 
+    }
     .title-logo {
         width: 25%;
     }
@@ -569,7 +588,7 @@ textarea {
         align-items: center;
     }
 
-    .navbar-logo {  
+    .navbar-logo {
         margin: 15px;
     }
 

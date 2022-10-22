@@ -1,12 +1,22 @@
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'f4d91db00fmsh99b38ac8ea00004p108099jsn3de33cdc8bf1',
-		'X-RapidAPI-Host': 'easy-instagram-service.p.rapidapi.com'
-	}
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'e752ab5e97msh2f089fc99e94bc9p15d318jsn19574086b66c',
+        'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
+    }
 };
-
-fetch('https://easy-instagram-service.p.rapidapi.com/username?username=somostamiz&random=x8n3nsj2', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+    
+function fetchData(){
+    fetch('https://instagram130.p.rapidapi.com/account-feed?username=somostamiz', options)
+		.then(response => response.json())
+		.then(data => {
+		console.log(data); 
+		const html = data.map(post => {
+			return post.node.display_url;
+		})	
+		console.log(html)
+		document.querySelector('#app').innerHTML = html;
+		})
+		.catch(err => console.error(err));
+}
+fetchData();
