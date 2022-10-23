@@ -12,6 +12,9 @@
 .filter-cream {
     filter: invert(100%) sepia(2%) saturate(6910%) hue-rotate(306deg) brightness(88%) contrast(107%);
 }
+.color-violet {
+    color: var(--color-violet);
+}
 
 body {
     padding: 0;
@@ -474,7 +477,7 @@ textarea {
 .footer-navbar-item {
     text-decoration: none;
     color: var(--color-cream);
-    padding: 0 50px;
+    margin: 0 50px;
 }
 .social-icon {
     width: 40px;
@@ -644,6 +647,9 @@ textarea {
     }
     .footer-navbar {
         display: flex;
+    }
+    .footer-navbar-item {
+        margin: 0 30px;
     }
 
 }
