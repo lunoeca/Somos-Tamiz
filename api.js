@@ -1,21 +1,20 @@
 const options = {
     method: 'GET',
+	
     headers: {
-        'X-RapidAPI-Key': 'e752ab5e97msh2f089fc99e94bc9p15d318jsn19574086b66c',
-        'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
+		'Key': '1', 
     }
 };
-    
 function fetchData(){
-    fetch('https://instagram130.p.rapidapi.com/account-feed?username=somostamiz', options)
+    fetch('www.themealdb.com/api/json/v1/1/random.php', options)
 		.then(response => response.json())
 		.then(data => {
-		console.log(data); 
-		const html = data.map(post => {
-			return post.node.display_url;
-		})	
-		console.log(html)
-		document.querySelector('#app').innerHTML = html;
+			console.log("DATA", data)		
+			// const arrayOfUrl = data.map(post => post.node.display_url)		
+			// console.log("arraOfUrl", arrayOfUrl)
+			// const arrayOfImg = arrayOfUrl.map(image => ('<img crossorigin="anonymous" class="api-img" src="' + image + '" alt=""/>'))	
+			// console.log("arrayOfImg",arrayOfImg)
+			// arrayOfImg.map(img => document.querySelector('#app').innerHTML += img)
 		})
 		.catch(err => console.error(err));
 }

@@ -19,7 +19,7 @@ body {
     background-color: var(--color-cream);
     align-items: center;
     font-family: 'Nunito', sans-serif;
-
+    overflow-x: hidden;
 }
 
 a {
@@ -40,27 +40,31 @@ h1 {
     justify-content: center;
     font-size: 20px;
     gap: 10px;
+    padding: 10px;
 }
 .aboutus-text p {
-    margin: 15;
+    margin: 5px;
+    font-size: 20px;
 }
 
-.card1-aboutus {
+.card-aboutus{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     gap: 10px;
     margin-bottom: 5%;
     background-color: var(--color-olive);
     box-sizing: content-box;
     width: 80vw;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
     padding: 24px;
-    border-radius: 15px;
+    border-radius: 4px;
     margin-top: 5%;
 }
-
+.card2-aboutus{
+    flex-direction: column;
+}
 .imagensocias{
-    border-radius: 15px;
+    border-radius: 4px;
     max-width: 70%;
     margin: 10px;
     height: 70%;
@@ -186,27 +190,27 @@ main {
 }
 
 .card-1-content {
+    width: 70vw;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
 }
-
+.bnt-link {
+    text-decoration: none;
+    color: var(--color-violet);
+}
 .btn-olive {
     background-color: var(--color-olive);
     color: var(--color-cream);
     border: 1px solid var(--color-cream);
     font-style: bold;
-
 }
-
 .btn-bg {
     border-radius: 15px;
     padding: 10px 25px;
-    font-size: 16px;
-
+    font-size: 14px;
 }
-
 .btn-md {
     border-radius: 15px;
     width: 200px;
@@ -238,6 +242,7 @@ main {
     color: var(--color-violet);
     text-align: center;
 }
+
 .card-2 {
     width: 80vw;
     display: flex;
@@ -248,11 +253,10 @@ main {
     margin: 30px auto;
     background-color: var(--color-olive);
 }
-.card-2 img {
-    max-width: 90%;
-    max-height: 60%;
+.img-home  {
+    max-width: 80%;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 4px;
 }
 .card-2 h3 {
     margin: 0;
@@ -286,35 +290,37 @@ main {
     padding: 60px auto;
 }
 .box-card-3 {
-    background-color: var(--color-olive);
-    box-sizing: content-box;
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    background-color: var(--color-olive);
     color: var(--color-cream);
+    box-sizing: content-box;
+    padding: 15px;
     margin: 0px;
 }
 .box-card-3 div{
-    max-width: 30%;;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-card-3 h3 {
+    text-align: center;
 }
 .box-card-3 img {
-    border-radius: 15px;
+    border-radius: 4px;
     max-width: 100%;
     
-
-
 }
-.bnt-link {
-    text-decoration: none;
-    color: var(--color-olive)
-}
+
 /* CONTACT-US */
 .main-form {
     display: flex;
     margin: 40px;
     background-color: var(--color-olive);
-    border-radius: 20px;
+    border-radius: 4px;
     padding: 50px 4px;
     justify-content: center;
 }
@@ -387,35 +393,6 @@ textarea {
     text-align: center;
 }
 
-/* FOOTER */
-.footer {
-    background-color: var(--color-violet);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    color: var(--color-cream);
-    padding: 10px 10px;
-}
-.footer-logo-box {
-    max-width: 30%;
-}
-.footer-logo {
-    width: 50%;
-}
-.footer-navbar {
-    list-style-type: none;
-    padding: 0;
-
-}
-.footer-navbar-item {
-    text-decoration: none;
-    color: var(--color-cream);
-
-}
-.social-icon {
-    width: 40px;
-}
-
 /* CAROUSEL */
 .container-carousel {
     display: flex;
@@ -466,16 +443,60 @@ textarea {
     100% { opacity: 1;
         transform: opacity linear;}
 }
+.container-yt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.container-yt iframe {
+    max-width: 90%;
+}
+/* FOOTER */
+.footer {
+    background-color: var(--color-violet);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-cream);
+    padding: 0 10px;
+}
+.footer-logo-box {
+    max-width: 20%;
+}
+.footer-logo {
+    max-width: 60px;
+}
+.footer-navbar {
+    list-style-type: none;
 
+}
+.footer-navbar-item {
+    text-decoration: none;
+    color: var(--color-cream);
+    padding: 0 50px;
+}
+.social-icon {
+    width: 40px;
+}
 
 /* For little phones: */
 @media screen and (max-width: 300px) {}
 
 /* For tablets: */
 @media screen and (min-width: 768px) {
-    .card1-aboutus {
+    .card-aboutus {
         flex-direction: row;
         gap: 25px;
+    }
+    .imagensocias{
+        border-radius: 4px;
+        max-width: 40%;
+        margin: 10px;
+    }
+    .aboutus-text p {
+        font-size: 20px;
+        margin: 5px;
     }
     .main-form{
         max-width: 70%;
@@ -539,8 +560,11 @@ textarea {
     .home-text {
         font-size: 24px;
     }
+    .footer-logo-box {
+        max-width: 30%;
+    }
     .footer-logo {
-        width: 30%;
+        max-width: 100px;
     }
     .btn-bg {
         width: 300px;
@@ -558,9 +582,19 @@ textarea {
         width: 80vw;
         display: flex;
         padding: 15px;
-        border-radius: 15px;
+        border-radius: 4px;
         color: var(--color-cream);
         margin: 10px;
+    }
+    .footer {
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .footer-navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px
     }
 }
 /* For desktop: */
@@ -574,7 +608,10 @@ textarea {
     .home-text {
         font-size: 36px;
     }
+    .aboutus-text p {
 
+        font-size: 28px;
+    }
     .box-card-3 {
         margin: 25px;
         max-width: 70vw;
@@ -603,19 +640,23 @@ textarea {
     }
     .navbar-main-list-item{
         font-size: 24px;
-        padding: 0px;
-    }
 
+    }
+    .footer-navbar {
+        display: flex;
+    }
 
 }
 
 
 @media (hover: hover) {
     .btn-olive:hover, .btn-cream:hover {
-        background-color: var(--color-violet);
-        border: 2px solid var(--color-cream);
+        background-color: var(--color-cream);
+        border: 4px solid var(--color-cream);
     }
-
+    .bnt-link:hover {
+        color: var(--color-olive);
+    }
     .navbar-main-list-item:hover {
         border-bottom: 3px solid var(--color-cream);
     }
