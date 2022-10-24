@@ -1,13 +1,15 @@
-// Si se usa var y const el carousel no funciona
+// Si se usa let y const el carousel no funciona
 var slidePosition = 0;
 var slides = document.getElementsByClassName('carousel__item');
 var totalSlides = slides.length;
 
-document.getElementById('carousel__button--next').addEventListener("click", function() {
-    moveToNextSlide();
+document.getElementById('carousel__button--next')
+        .addEventListener("click", function() {
+        moveToNextSlide();
 });
-document.getElementById('carousel__button--prev').addEventListener("click", function() {
-    moveToPrevSlide();
+document.getElementById('carousel__button--prev')
+        .addEventListener("click", function() {
+        moveToPrevSlide();
 });
 
 function updateSlidePosition() {

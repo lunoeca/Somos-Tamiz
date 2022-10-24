@@ -441,7 +441,7 @@ textarea {
     margin-right: 20px;
 }
     
-    @keyframes fadeVisibility {
+@keyframes fadeVisibility {
     0% {
         opacity: 0;
     }
@@ -455,7 +455,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    gap: 10px;
+    padding: 0px 20px;
 }
 .container-yt iframe {
     max-width: 90%;
@@ -487,9 +488,25 @@ textarea {
 .social-icon {
     width: 40px;
 }
-
-/* For little phones: */
-@media screen and (max-width: 300px) {}
+/* RECETA DE API */
+#receta-api {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin: 20px 0px;
+}
+#receta-imagen {
+    max-width: 90vw;
+}
+#receta-texto {
+    font-size: 16px;
+}
+.h3-gallery {
+    font-size: 20px;
+    text-align: center;
+}
 
 /* For tablets: */
 @media screen and (min-width: 768px) {
@@ -509,7 +526,6 @@ textarea {
     .main-form{
         max-width: 70%;
         margin: 20px auto;
-
     }
     .check-btn , .close-btn{
         display: none;
@@ -604,7 +620,15 @@ textarea {
         grid-template-rows: 1fr 1fr;
         gap: 10px
     }
+    #receta-texto {
+        font-size: 20px;
+        max-width: 80vw;
+    }
+    .h3-gallery {
+        font-size: 24px;
+    }
 }
+
 /* For desktop: */
 @media screen and (min-width: 1024px) {
     .card-1{
@@ -655,6 +679,13 @@ textarea {
     }
     .footer-navbar-item {
         margin: 0 30px;
+    }
+    #receta-texto {
+        font-size: 24px;
+        max-width: 70vw;
+    }
+    .h3-gallery {
+        font-size: 32px;
     }
 
 }
