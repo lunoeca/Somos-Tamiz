@@ -2,11 +2,12 @@ const options = {
     method: 'GET',
 	
     headers: {
-		'Key': '1', 
+		// Content-Type: application/json
+
     }
 };
 function fetchData(){
-    fetch('www.themealdb.com/api/json/v1/1/random.php', options)
+    fetch('www.themealdb.https://api.spoonacular.com/recipes/random/api/json/v1/1/random.php', options)
 		.then(response => response.json())
 		.then(data => {
 			console.log("DATA", data)		

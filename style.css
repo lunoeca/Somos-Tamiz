@@ -2,9 +2,6 @@
     --color-violet: #86647A;
     --color-olive: #a5a281;
     --color-cream: #eae6dc;
-
-
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Nunito:wght@200;300&family=Oswald:wght@300;400&display=swap');
@@ -162,22 +159,18 @@ h1 {
 main {
     background-color: var(--color-cream);
 }
-
 .main-home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .card-1 {
     height: 35vh;
     width: 100vw;
     text-align: center;
     position: relative;
     background-color: var(--color-olive);
-
 }
-
 .card-1::before {
     content: '';
     position: absolute;
@@ -191,7 +184,6 @@ main {
     background-position: center center;
     opacity: 0.6;
 }
-
 .card-1-content {
     width: 70vw;
     position: absolute;
@@ -406,19 +398,23 @@ textarea {
     max-width: 600px;
     position: relative;
 }
+    
 .carousel .carousel__item,
 .carousel .carousel__item--hidden {
     display: none;
 }
+
 .carousel .carousel__item img {
     width: 100%;
     max-width: 600px;
     height: auto;
 }
+    
 .carousel .carousel__item--visible {
     display: block;
     animation: fadeVisibility 0.5s;
 }
+    
 .carousel .carousel__actions {
     display: flex;
     width: 100%;
@@ -427,6 +423,7 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .carousel .carousel__actions button {
     border-radius: 50px;
     border: 0;
@@ -435,17 +432,25 @@ textarea {
     width: 40px;
     height: 40px;
 }
+
 .carousel .carousel__actions button#carousel__button--prev {
     margin-left: 20px;
 }
+    
 .carousel .carousel__actions button#carousel__button--next {
     margin-right: 20px;
 }
-@keyframes fadeVisibility {
-    0% { opacity: 0; }
-    100% { opacity: 1;
-        transform: opacity linear;}
+    
+    @keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
 }
+/* IFRAME YOUTUBE*/
 .container-yt {
     display: flex;
     flex-direction: column;
