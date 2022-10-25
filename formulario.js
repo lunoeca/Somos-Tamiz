@@ -1,3 +1,9 @@
+const options = {
+     headers: {
+          "Set-Cookie": "cross-site-cookie = whatever; SameSite = None; Secure"
+     }
+}
+
 function chequeo() {
      var nombre = document.getElementById('nombre');
      var correo = document.getElementById('correo');
