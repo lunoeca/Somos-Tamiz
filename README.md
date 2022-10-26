@@ -31,5 +31,5 @@ Este sitio web tiene la temática de Servicio de cocina empresarial y eventos de
          https://spoonacular.com/food-api/docs#Get-Random-Recipes
          
          
-####Disclaimer: En la carpeta intento de api, se trabajo intentando conectar una api de instagram pero por lo que entendemos en un tema de permisos (Bloqueo de CORS Policy). Tambien se encuentra la carpeta de mockups, el resultado final no coincide totalmente con el mock up pero se uso el mismo de guia para el diseño general del sitio.
+#### Disclaimer: En la carpeta intento de api, se trabajo intentando conectar una api de instagram pero por lo que entendemos en un tema de permisos (Bloqueo de CORS Policy). Tambien se encuentra la carpeta de mockups, el resultado final no coincide totalmente con el mock up pero se uso el mismo de guia para el diseño general del sitio.
        
