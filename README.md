@@ -3,14 +3,14 @@
 ## Codo a Codo. Full-Stack Python Comision 22531
 
 ```
-Grupo 12:
+Grupo 12 💪:
 
 * Lucia Cano,
 * Contanza Maetta,
 * Paola Galacho
 ```
-
-## Proyecto: Tamiz - Servicio de cocina empresarial y eventos de cocina.
+# En proyecto se encuentra desarrollado en la branch dev, por favor, evaluar la misma! 🙏
+## Proyecto:  👩‍🍳  Tamiz - Servicio de cocina empresarial y eventos de cocina.
 
 Este sitio web tiene la temática de Servicio de cocina empresarial y eventos de cocina, en la que se puede interactuar con las distintas secciones. En Nosotros se puede ver como se conforma el equipo, su historia. La pagina cuenta tambien con una galeria de fotos donde se pueden ver como se realizan los eventos. Tiene un formulario de contacto para realizar cualquier consulta.
 
@@ -31,5 +31,5 @@ Este sitio web tiene la temática de Servicio de cocina empresarial y eventos de
          https://spoonacular.com/food-api/docs#Get-Random-Recipes
          
          
-#### Disclaimer: En la carpeta intento de api, se trabajo intentando conectar una api de instagram pero por lo que entendemos en un tema de permisos (Bloqueo de CORS Policy). Tambien se encuentra la carpeta de mockups, el resultado final no coincide totalmente con el mock up pero se uso el mismo de guia para el diseño general del sitio.
+#### ⚠️ Disclaimer: En la carpeta intento de api, se trabajo intentando conectar una api de instagram pero por lo que entendemos en un tema de permisos (Bloqueo de CORS Policy). Tambien se encuentra la carpeta de mockups, el resultado final no coincide totalmente con el mock up pero se uso el mismo de guia para el diseño general del sitio.
        
